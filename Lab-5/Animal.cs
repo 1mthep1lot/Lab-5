@@ -27,6 +27,37 @@ namespace Lab_5
             Console.WriteLine($"{Name} is sleeping.");
         }
 
+        internal class Cat: Animal
+        {
+            public bool LikesClimbing { get; set; }
+
+            public void Scratch()
+            {
+                Console.WriteLine($"{Name} is scratching.");
+            }
+        }
+
+        internal class Lion: Animal
+        {
+            public bool HasMane { get; set; }
+
+            public void Roar()
+            {
+                Console.WriteLine($"{Name} is roaring.");
+            }
+
+        }
+
+        internal class Dog: Animal
+        {
+        public string Breed { get; set; }
+
+            public void Fetch()
+            {
+                Console.WriteLine($"{Name} is fetching.");
+            }
+        }
+
 
     }
 
