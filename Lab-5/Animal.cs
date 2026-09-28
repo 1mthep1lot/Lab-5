@@ -11,5 +11,27 @@ namespace Lab_5
         public double Weight { get; set; }
         public string Gender { get; set; }
         public string Species { get; set; }
+
+        public void Eat()
+        {
+            Console.WriteLine($"{Name} is eating.");
+        }
+
+        public void Sleep()
+        {
+            Console.WriteLine($"{Name} is sleeping.");
+        }
+
+        public void Drink()
+        {
+            Console.WriteLine($"{Name} is sleeping.");
+        }
+
+
     }
+
+
+
+
+
 }
