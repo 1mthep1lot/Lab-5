@@ -7,7 +7,7 @@ namespace Lab_5
 
     internal class Cat : Animal
     {
-        public bool LikesClimbing { get; set; }
+        public bool LikesClimbing { get; set; } = true;
 
         public void Scratch()
         {

@@ -6,7 +6,7 @@ namespace Lab_5
 {
     internal class Dog : Animal
     {
-        public string Breed { get; set; }
+        public string Breed { get; set; } = "Mixed";
 
         public void Fetch()
         {

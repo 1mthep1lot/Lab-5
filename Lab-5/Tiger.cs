@@ -6,7 +6,7 @@ namespace Lab_5
 {
     internal class Lion : Animal
     {
-        public bool HasMane { get; set; }
+        public bool HasMane { get; set; } = true;   
 
         public void Roar()
         {
