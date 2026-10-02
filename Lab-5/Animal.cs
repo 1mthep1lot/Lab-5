@@ -6,11 +6,11 @@ namespace Lab_5
 {
     internal class Animal
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public double Weight { get; set; }
-        public string Gender { get; set; }
-        public string Species { get; set; }
+        public string Name { get; set; } = "Unknown";   
+        public int Age { get; set; } = 0;
+        public double Weight { get; set; } = 0.0;   
+        public string Gender { get; set; } = "Unknown"; 
+        public string Species { get; set; } = "Unknown";    
 
         public void Eat()
         {
@@ -24,45 +24,11 @@ namespace Lab_5
 
         public void Drink()
         {
-            Console.WriteLine($"{Name} is sleeping.");
-        }
-
-        internal class Cat: Animal
-        {
-            public bool LikesClimbing { get; set; }
-
-            public void Scratch()
-            {
-                Console.WriteLine($"{Name} is scratching.");
-            }
-        }
-
-        internal class Lion: Animal
-        {
-            public bool HasMane { get; set; }
-
-            public void Roar()
-            {
-                Console.WriteLine($"{Name} is roaring.");
-            }
-
-        }
-
-        internal class Dog: Animal
-        {
-        public string Breed { get; set; }
-
-            public void Fetch()
-            {
-                Console.WriteLine($"{Name} is fetching.");
-            }
+            Console.WriteLine($"{Name} is drinking.");
         }
 
 
     }
-
-
-
 
 
 }
