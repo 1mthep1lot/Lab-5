@@ -4,16 +4,14 @@ using System.Text;
 
 namespace Lab_5
 {
-    internal class Dalmatian
+    internal class Dalmatian : Dog
     {
-        public class Dalmatian : Dog
-        {
-            public bool HasSpots { get; set; } = true;
+        public int NumberOfSpots { get; set; } = 50;
            
             public void Run()
             {
-                Console.WriteLine($"{Name} is running.");
+                Console.WriteLine($"{Name} has {NumberOfSpots} spots.");
             }
         }
     }
-}
+

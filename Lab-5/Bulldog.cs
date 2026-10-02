@@ -4,11 +4,8 @@ using System.Text;
 
 namespace Lab_5
 {
-    internal class Bulldog
+    internal class Bulldog :Dog
     {
-
-        public class Bulldog: Dog
-        {
             public bool IsStrong { get; set; } = true;  
 
             public void Guard()
@@ -17,4 +14,4 @@ namespace Lab_5
             }   
         }
     }
-}
+
