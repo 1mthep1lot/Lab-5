@@ -27,6 +27,10 @@ namespace Lab_5
             Console.WriteLine($"{Name} is drinking.");
         }
 
+        public virtual void makeSound()
+        {
+            Console.WriteLine($"{Name} is making a sound.");
+        }
 
     }
 

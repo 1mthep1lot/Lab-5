@@ -13,5 +13,10 @@ namespace Lab_5
         {
             Console.WriteLine($"{Name} is scratching.");
         }
+
+        public override void makeSound()
+        {
+            Console.WriteLine($"{Name} says: Meow! ");
+        }
     }
 }

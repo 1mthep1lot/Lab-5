@@ -12,5 +12,11 @@ namespace Lab_5
         {
             Console.WriteLine($"{Name} is fetching.");
         }
+
+        public override void makeSound()
+        {
+            Console.WriteLine($"{Name} says: Woof! ");
+        }
     }
-}
+
+    }
