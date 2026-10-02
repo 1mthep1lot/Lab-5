@@ -8,6 +8,11 @@ namespace Lab_5
     {
         public bool HasMane { get; set; } = true;   
 
+        public Lion(string name, int age, double weight, string gender, string species, bool hasMane) : base(name, age, weight, gender, species)
+        {
+            HasMane = hasMane;
+        }   
+
         public void Roar()
         {
             Console.WriteLine($"{Name} is roaring.");

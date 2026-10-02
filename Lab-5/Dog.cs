@@ -8,6 +8,10 @@ namespace Lab_5
     {
         public string Breed { get; set; } = "Mixed";
 
+        public Dog (string name, int age, double weight, string gender, string species, string breed) : base(name, age, weight, gender, species)
+        {
+            Breed = breed;
+        }
         public void Fetch()
         {
             Console.WriteLine($"{Name} is fetching.");
