@@ -6,6 +6,17 @@ namespace Lab_5
 {
     internal class Animal
     {
+        public Animal(string name, int age, double weight, string gender, string species)
+        {
+           Name = name;
+           Age = age;
+           Weight = weight;
+           Gender = gender;
+           Species = species;
+        }
+
+
+
         public string Name { get; set; } = "Unknown";   
         public int Age { get; set; } = 0;
         public double Weight { get; set; } = 0.0;   
