@@ -1,24 +1,36 @@
-﻿namespace Lab_5
+﻿using System;
+using System.Collections.Generic;
+
+namespace Lab_5
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-        Dog dog = new Dog("Shellby", 3, 15.5, "Female", "Dog", "Labrador");
 
-        Cat cat = new Cat("Whiskers", 2, 10.2, "Male", "Cat", true);
+            List<Animal> zoo = new List<Animal>
+             {
+            new Dog("Shellby", 3, 15.5, "Female", "Labrador"),
 
-            Lion lion = new Lion("Simba", 5, 420.0, "Male", "Lion", true);
+            new Cat("Whiskers", 2, 10.2, "Male"),
 
-            Bulldog bulldog = new Bulldog("Woofy", 4, 25.0, "Male", "Bulldog", "Bulldog", true); 
+            new Lion("Simba", 5, 420.0, "Male"),
 
-            Dalmatian dalmatian = new Dalmatian("Spots", 3, 20.0, "Female", "Dalmatian", "Dalmatian", 87);   
+            new Bulldog("Woofy", 4, 25.0, "Male"),
 
-            dog.makeSound();
-            cat.makeSound();
-            lion.makeSound();
+           new Dalmatian("Spots", 3, 20.0, "Female", 87),
+                };
+
+            foreach (Animal animal in zoo)
+            {
+                animal.makeSound();
+            }
+            Bulldog bulldog = new Bulldog("Woofy", 4, 25.0, "Male");
+            Dalmatian dalmatian = new Dalmatian("Spots", 3, 20.0, "Female");
             bulldog.ShowWrinkles();
             dalmatian.ShowSpots();
+
+            bulldog.Eat();
         }
     }
 }
