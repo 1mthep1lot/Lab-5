@@ -6,17 +6,17 @@ namespace Lab_5
 {
     internal class Bulldog :Dog
     {
-            public bool IsStrong { get; set; } = true;  
+            public bool IsWrinkly { get; set; } = true;  
 
-        public Bulldog(string name, int age, double weight, string gender, string species, string breed, bool isStrong) 
+        public Bulldog(string name, int age, double weight, string gender, string species, string breed, bool isWrinkly) 
             : base(name, age, weight, gender, species, breed)
         {
-            IsStrong = isStrong;
+            IsWrinkly = isWrinkly;
         }
 
-        public void Guard()
+        public void ShowWrinkles()
             {
-                Console.WriteLine($"{Name} is guarding.");
+                Console.WriteLine($"{Name} has wrinkles.");
             }   
         }
     }

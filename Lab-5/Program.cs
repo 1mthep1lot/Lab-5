@@ -10,9 +10,15 @@
 
             Lion lion = new Lion("Simba", 5, 420.0, "Male", "Lion", true);
 
+            Bulldog bulldog = new Bulldog("Woofy", 4, 25.0, "Male", "Bulldog", "Bulldog", true); 
+
+            Dalmatian dalmatian = new Dalmatian("Spots", 3, 20.0, "Female", "Dalmatian", "Dalmatian", 87);   
+
             dog.makeSound();
             cat.makeSound();
-            lion.makeSound();   
+            lion.makeSound();
+            bulldog.ShowWrinkles();
+            dalmatian.ShowSpots();
         }
     }
 }
