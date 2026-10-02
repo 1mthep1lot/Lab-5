@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Lab_5
 {
-    //Bulldog inherits from Dog, which inherits from Animal.
+    //Bulldog inherits from Dog, which inherits from Animal. It has everything Dog has and everything Animal has.
     internal class Bulldog : Dog
 
         //unique property for bulldogs.
@@ -12,6 +11,8 @@ namespace Lab_5
         public bool IsWrinkly { get; set; } = true;
 
         //Passes everything the Dog constructor needs with base(..).
+
+        //The breed is always "Bulldog" so the user doesnt have to type it.
 
         public Bulldog(string name, int age, double weight, string gender, bool isWrinkly = true)
             : base(name, age, weight, gender, "Bulldog")

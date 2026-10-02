@@ -1,16 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Lab_5
 {
-    // Dog inherits from Animal.
+    // Dog inherits from Animal. It gets Name, Age, Eat(), Sleep() and so on.
     internal class Dog : Animal
     {
-        //New property that only dogs have
+        //New property that only dogs have witha  default value.
         public string Breed { get; set; } = "Mixed";
 
-     //Constructor passes the shared values to Animal using base (..) and sets the dog-specific value itself.
+        //Constructor : base sends the shared values up to Animals constructor. 
+        // The species is alwats "Dog" for this class, so Dog sets it itself.
+        // breed is optional, if it is left out, it will be "Mixed" by default.
         public Dog (string name, int age, double weight, string gender, string breed = "Mixed") : base(name, age, weight, gender, "Dog")
         {
             Breed = breed;

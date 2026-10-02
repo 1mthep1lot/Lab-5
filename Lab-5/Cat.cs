@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace Lab_5
 {
@@ -10,6 +9,8 @@ namespace Lab_5
 
         //New cat specific property with a default value.
         public bool LikesClimbing { get; set; } = true;
+
+        //Species is always "Cat", likesClimbing is optional and defaults to true.
 
         public Cat(string name, int age, double weight, string gender, bool likesClimbing = true) : base(name, age, weight, gender, "Cat")
         {
